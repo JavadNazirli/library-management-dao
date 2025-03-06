@@ -15,14 +15,7 @@ The goal is to establish a robust data layer for a library management system, is
 - **No External Dependencies**: Pure Java with no frameworks (yet!).
 
 ## Project Structure
-.
-├── src/
-├── ├── main/
-├── │   ├── java/
-├── │   │   ├── model/        # Book entity
-├── │   │   ├── dao/          # DAO interface and implementation
-├── │   │   └── Main.java     # Entry point for testing
-└── └── README.md
+![Project Structure](project-structure.png)
 
 ## Getting Started
 1. Clone the repository: `git clone https://github.com/[your-username]/library-management-dao.git`
