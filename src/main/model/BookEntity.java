@@ -1,18 +1,19 @@
 package main.model;
 
 public class BookEntity {
-    private int id;
+    private final String isbn;
     private String name;
     private String author;
     private int publicationYear;
 
-    public int getId() {
-        return id;
+    public BookEntity(String name, String author, int publicationYear) {
+        this(null, name, author, publicationYear);
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public String getIsbn() {
+        return isbn;
     }
+
 
     public String getName() {
         return name;
@@ -41,15 +42,15 @@ public class BookEntity {
     @Override
     public String toString() {
         return "BookEntity{" +
-                "id=" + id +
+                "ISBN= " + isbn +
                 ", name='" + name + '\'' +
                 ", author='" + author + '\'' +
                 ", publicationYear=" + publicationYear +
                 '}';
     }
 
-    public BookEntity(int id, String name, String author, int publicationYear) {
-        this.id = id;
+    public BookEntity(String isbn, String name, String author, int publicationYear) {
+        this.isbn = isbn;
         this.name = name;
         this.author = author;
         this.publicationYear = publicationYear;
