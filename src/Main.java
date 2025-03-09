@@ -1,5 +1,6 @@
 import main.dao.BookDAO;
 import main.dao.file.CSVBasedBookDAOImpl;
+import main.dao.file.TXTBasedBookDAOImpl;
 import main.dao.inMemory.InMemoryBookDAOImpl;
 import main.model.BookEntity;
 
@@ -8,11 +9,14 @@ import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
-        BookDAO bookDAO = new CSVBasedBookDAOImpl();
-        CSVBasedBookDAOImpl bookDAOImpl = new CSVBasedBookDAOImpl();
+        BookDAO bookDAO = new TXTBasedBookDAOImpl();
+        TXTBasedBookDAOImpl bookDAOImpl = new TXTBasedBookDAOImpl();
+//        CSVBasedBookDAOImpl bookDAOImpl = new CSVBasedBookDAOImpl();
         bookDAO.addBook(new BookEntity("Javad's code","Javad",2025));
         List<BookEntity> books = bookDAOImpl.getAllBooks();
         books.forEach(System.out::println);
+//        --------------------------------------------------------------------------------
+
 //        bookDAO.addBook(new BookEntity(1, "1984", "George Orwell", 2023));
 //        bookDAO.addBook(new BookEntity(2, "Crime and Punishment", "Dostoevsky", 2024));
 //        bookDAO.addBook(new BookEntity(3, "Atomic Habits", "James Clear", 2022));
