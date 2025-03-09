@@ -10,12 +10,14 @@ import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
-        BookDAO bookDAO = new CSVBasedBookDAOImpl();
-        CSVBasedBookDAOImpl bookDAOImpl = new CSVBasedBookDAOImpl();
+       TXTBasedBookDAOImpl txtBasedBookDAO = new TXTBasedBookDAOImpl();
+        txtBasedBookDAO.getAllBooks().forEach(System.out::println);
+
+
 //        CSVBasedBookDAOImpl bookDAOImpl = new CSVBasedBookDAOImpl();
 
 //        --------------------------------------------------------------------------------
-        new RecordMigrationUtils().migrateCsvToTxt();
+
 
 
 //        bookDAO.addBook(new BookEntity(1, "1984", "George Orwell", 2023));

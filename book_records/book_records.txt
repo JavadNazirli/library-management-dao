@@ -1,20 +1,21 @@
-550e8400-e29b-41d4-a716-446655440000;1984;George Orwell;1949;
-8f629c8a-9f2b-4e5d-b123-abcdef123456;Crime and Punishment;Fyodor Dostoevsky;1866;
-3b8f7e9d-2c1a-4f5e-9876-543210987654;To Kill a Mockingbird;Harper Lee;1960;
-9c8d7e6f-5b4a-3d2c-1f0e-abcdef987654;The Great Gatsby;F. Scott Fitzgerald;1925;
-1a2b3c4d-5e6f-7a8b-9c0d-123456789abc;Pride and Prejudice;Jane Austen;1813;
-d4e5f6a7-b8c9-d0e1-f2a3-456789abcdef;The Catcher in the Rye;J.D. Salinger;1951;
-7b8c9d0e-1f2a-3b4c-5d6e-789abcdef123;Animal Farm;George Orwell;1945;
-e1f2a3b4-c5d6-e7f8-a9b0-cdef12345678;Brave New World;Aldous Huxley;1932;
-4c5d6e7f-8a9b-0c1d-2e3f-123456789def;The Hobbit;J.R.R. Tolkien;1937;
-b0c1d2e3-f4a5-b6c7-d8e9-abcdef987123;Fahrenheit 451;Ray Bradbury;1953;
-2e3f4a5b-6c7d-8e9f-0a1b-123456789cde;Lord of the Flies;William Golding;1954;
-f6a7b8c9-d0e1-f2a3-b4c5-6789abcdef12;The Da Vinci Code;Dan Brown;2003;
-8d9e0f1a-2b3c-4d5e-6f7a-89abcdef1234;Harry Potter and the Sorcerer's Stone;J.K. Rowling;1997;
-c1d2e3f4-a5b6-c7d8-e9f0-123456789abc;The Alchemist;Paulo Coelho;1988;
-5e6f7a8b-9c0d-1e2f-3a4b-abcdef123456;Dune;Frank Herbert;1965;
-a9b0c1d2-e3f4-a5b6-c7d8-789abcdef123;The Road;Cormac McCarthy;2006;
-3f4a5b6c-7d8e-9f0a-1b2c-123456789def;Sapiens;Yuval Noah Harari;2011;
-d8e9f0a1-b2c3-d4e5-f6a7-abcdef987654;Atomic Habits;James Clear;2018;
-6c7d8e9f-0a1b-2c3d-4e5f-123456789abc;The Outsiders;S.E. Hinton;1967;
-0f1a2b3c-4d5e-6f7a-8b9c-abcdef123456;The Kite Runner;Khaled Hosseini;2003;
+550e8400-e29b-41d4-a716-446655440000;1984;George Orwell;1949
+8f629c8a-9f2b-4e5d-b123-abcdef123456;Crime and Punishment;Fyodor Dostoevsky;1866
+3b8f7e9d-2c1a-4f5e-9876-543210987654;To Kill a Mockingbird;Harper Lee;1960
+9c8d7e6f-5b4a-3d2c-1f0e-abcdef987654;The Great Gatsby;F. Scott Fitzgerald;1925
+1a2b3c4d-5e6f-7a8b-9c0d-123456789abc;Pride and Prejudice;Jane Austen;1813
+d4e5f6a7-b8c9-d0e1-f2a3-456789abcdef;The Catcher in the Rye;J.D. Salinger;1951
+7b8c9d0e-1f2a-3b4c-5d6e-789abcdef123;Animal Farm;George Orwell;1945
+e1f2a3b4-c5d6-e7f8-a9b0-cdef12345678;Brave New World;Aldous Huxley;1932
+4c5d6e7f-8a9b-0c1d-2e3f-123456789def;The Hobbit;J.R.R. Tolkien;1937
+b0c1d2e3-f4a5-b6c7-d8e9-abcdef987123;Fahrenheit 451;Ray Bradbury;1953
+2e3f4a5b-6c7d-8e9f-0a1b-123456789cde;Lord of the Flies;William Golding;195
+f6a7b8c9-d0e1-f2a3-b4c5-6789abcdef12;The Da Vinci Code;Dan Brown;2003
+8d9e0f1a-2b3c-4d5e-6f7a-89abcdef1234;Harry Potter and the Sorcerer's Stone;J.K. Rowling;1997
+c1d2e3f4-a5b6-c7d8-e9f0-123456789abc;The Alchemist;Paulo Coelho;1988
+5e6f7a8b-9c0d-1e2f-3a4b-abcdef123456;Dune;Frank Herbert;1965
+a9b0c1d2-e3f4-a5b6-c7d8-789abcdef123;The Road;Cormac McCarthy;2006
+3f4a5b6c-7d8e-9f0a-1b2c-123456789def;Sapiens;Yuval Noah Harari;2011
+d8e9f0a1-b2c3-d4e5-f6a7-abcdef987654;Atomic Habits;James Clear;2018
+6c7d8e9f-0a1b-2c3d-4e5f-123456789abc;The Outsiders;S.E. Hinton;1967
+0f1a2b3c-4d5e-6f7a-8b9c-abcdef123456;The Kite Runner;Khaled Hosseini;2003
+
