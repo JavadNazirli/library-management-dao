@@ -1,4 +1,11 @@
 "isbn","name","author","publicationYear"
-"550e8400-e29b-41d4-a716-446655440000","1984","George Orwell","1949"
-"8f629c8a-9f2b-4e5d-b123-abcdef123456","Crime and Punishment","Fyodor Dostoevsky","1866"
-"7d9eb6f9-cec3-4084-bde2-d11d3d07049a","Javad's code","Javad","2025"
+550e8400-e29b-41d4-a716-446655440000;1984;George Orwell;1949
+8f629c8a-9f2b-4e5d-b123-abcdef123456;Crime and Punishment;Fyodor Dostoevsky;1866
+3b8f7e9d-2c1a-4f5e-9876-543210987654;To Kill a Mockingbird;Harper Lee;1960
+9c8d7e6f-5b4a-3d2c-1f0e-abcdef987654;The Great Gatsby;F. Scott Fitzgerald;1925
+1a2b3c4d-5e6f-7a8b-9c0d-123456789abc;Pride and Prejudice;Jane Austen;1813
+d4e5f6a7-b8c9-d0e1-f2a3-456789abcdef;The Catcher in the Rye;J.D. Salinger;1951
+7b8c9d0e-1f2a-3b4c-5d6e-789abcdef123;Animal Farm;George Orwell;1945
+e1f2a3b4-c5d6-e7f8-a9b0-cdef12345678;Brave New World;Aldous Huxley;1932
+4c5d6e7f-8a9b-0c1d-2e3f-123456789def;The Hobbit;J.R.R. Tolkien;1937
+b0c1d2e3-f4a5-b6c7-d8e9-abcdef987123;Fahrenheit 451;Ray Bradbury;1953
