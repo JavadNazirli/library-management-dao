@@ -18,5 +18,3 @@ a9b0c1d2-e3f4-a5b6-c7d8-789abcdef123;The Road;Cormac McCarthy;2006;
 d8e9f0a1-b2c3-d4e5-f6a7-abcdef987654;Atomic Habits;James Clear;2018;
 6c7d8e9f-0a1b-2c3d-4e5f-123456789abc;The Outsiders;S.E. Hinton;1967;
 0f1a2b3c-4d5e-6f7a-8b9c-abcdef123456;The Kite Runner;Khaled Hosseini;2003;
-3de9b1c3-e871-4f13-acf8-4d3453c44784;Javad's code;Javad;2025;
-

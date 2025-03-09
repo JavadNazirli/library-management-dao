@@ -98,4 +98,8 @@ public class CSVBasedBookDAOImpl implements BookDAO {
     public List<BookEntity> getAllBooks() {
         return readBooksFromFile();
     }
+
+    public void saveAllBooks(List<BookEntity> books) {
+        writeBooksToFile(books);
+    }
 }
