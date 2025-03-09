@@ -77,7 +77,7 @@ public class TXTBasedBookDAOImpl implements BookDAO {
                         book.getIsbn() + SEPARATOR
                                 + book.getName() + SEPARATOR
                                 + book.getAuthor() + SEPARATOR
-                                + book.getPublicationYear() + SEPARATOR
+                                + book.getPublicationYear()
                 );
                 bufferedWriter.newLine();
             }
