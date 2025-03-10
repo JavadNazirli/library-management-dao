@@ -1,8 +1,12 @@
 package main.model;
 
 public class BookEntity {
-    private final String isbn;
+    private String isbn;
     private String name;
+
+    public BookEntity() {
+    }
+
     private String author;
     private int publicationYear;
 
