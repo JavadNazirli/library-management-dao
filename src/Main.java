@@ -1,5 +1,6 @@
 import main.dao.BookDAO;
 import main.dao.file.CSVBasedBookDAOImpl;
+import main.dao.file.JSONBasedBookDAOImpl;
 import main.dao.file.TXTBasedBookDAOImpl;
 import main.dao.inMemory.InMemoryBookDAOImpl;
 import main.model.BookEntity;
@@ -10,8 +11,8 @@ import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
-       TXTBasedBookDAOImpl txtBasedBookDAO = new TXTBasedBookDAOImpl();
-        txtBasedBookDAO.getAllBooks().forEach(System.out::println);
+       JSONBasedBookDAOImpl bookDAO = new JSONBasedBookDAOImpl();
+       bookDAO.getAllBooks().forEach(System.out::println);
 
 
 //        CSVBasedBookDAOImpl bookDAOImpl = new CSVBasedBookDAOImpl();
