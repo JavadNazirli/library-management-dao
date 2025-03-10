@@ -3,6 +3,7 @@ package main.dao.file;
 
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import main.dao.BookDAO;
 import main.model.BookEntity;
@@ -100,6 +101,7 @@ public class XMLBasedBookDAOImpl implements BookDAO {
 
     @JacksonXmlRootElement(localName = "books")
     private static class BookListWrapper {
+        @JacksonXmlProperty(localName = "book")
         @JacksonXmlElementWrapper(useWrapping = false)
         List<BookEntity> books;
 

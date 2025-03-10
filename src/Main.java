@@ -2,6 +2,7 @@ import main.dao.BookDAO;
 import main.dao.file.CSVBasedBookDAOImpl;
 import main.dao.file.JSONBasedBookDAOImpl;
 import main.dao.file.TXTBasedBookDAOImpl;
+import main.dao.file.XMLBasedBookDAOImpl;
 import main.dao.inMemory.InMemoryBookDAOImpl;
 import main.model.BookEntity;
 import main.utils.RecordMigrationUtils;
@@ -11,7 +12,7 @@ import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
-       JSONBasedBookDAOImpl bookDAO = new JSONBasedBookDAOImpl();
+        XMLBasedBookDAOImpl bookDAO = new XMLBasedBookDAOImpl();
        bookDAO.getAllBooks().forEach(System.out::println);
 
 
