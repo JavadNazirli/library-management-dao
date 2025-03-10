@@ -1,0 +1,62 @@
+[
+  {
+    "isbn": "550e8400-e29b-41d4-a716-446655440000",
+    "name": "1984",
+    "author": "George Orwell",
+    "publicationYear": 1949
+  },
+  {
+    "isbn": "8f629c8a-9f2b-4e5d-b123-abcdef123456",
+    "name": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "publicationYear": 1866
+  },
+  {
+    "isbn": "3b8f7e9d-2c1a-4f5e-9876-543210987654",
+    "name": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "publicationYear": 1960
+  },
+  {
+    "isbn": "9c8d7e6f-5b4a-3d2c-1f0e-abcdef987654",
+    "name": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "publicationYear": 1925
+  },
+  {
+    "isbn": "1a2b3c4d-5e6f-7a8b-9c0d-123456789abc",
+    "name": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "publicationYear": 1813
+  },
+  {
+    "isbn": "d4e5f6a7-b8c9-d0e1-f2a3-456789abcdef",
+    "name": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "publicationYear": 1951
+  },
+  {
+    "isbn": "7b8c9d0e-1f2a-3b4c-5d6e-789abcdef123",
+    "name": "Animal Farm",
+    "author": "George Orwell",
+    "publicationYear": 1945
+  },
+  {
+    "isbn": "e1f2a3b4-c5d6-e7f8-a9b0-cdef12345678",
+    "name": "Brave New World",
+    "author": "Aldous Huxley",
+    "publicationYear": 1932
+  },
+  {
+    "isbn": "4c5d6e7f-8a9b-0c1d-2e3f-123456789def",
+    "name": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "publicationYear": 1937
+  },
+  {
+    "isbn": "b0c1d2e3-f4a5-b6c7-d8e9-abcdef987123",
+    "name": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "publicationYear": 1953
+  }
+]
