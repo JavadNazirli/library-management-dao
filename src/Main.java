@@ -15,8 +15,8 @@ import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        TXTBasedBookDAOImpl bookDAO = new TXTBasedBookDAOImpl();
-        RecordMigrationUtils.migrateAllFilesToTXT();
+        XMLBasedBookDAOImpl bookDAO = new XMLBasedBookDAOImpl();
+        RecordMigrationUtils.migrateAllFilesToXML();
         bookDAO.getAllBooks().forEach(System.out::println);
 
 
