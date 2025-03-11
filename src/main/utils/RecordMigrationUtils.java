@@ -2,45 +2,38 @@ package main.utils;
 
 import main.dao.BookDAO;
 import main.dao.file.CSVBasedBookDAOImpl;
+import main.dao.file.JSONBasedBookDAOImpl;
 import main.dao.file.TXTBasedBookDAOImpl;
+import main.dao.file.XMLBasedBookDAOImpl;
 import main.model.BookEntity;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class RecordMigrationUtils {
-    public void migrateTxtToCsv() {
-        BookDAO txtDAO = new TXTBasedBookDAOImpl();
-        BookDAO csvDAO = new CSVBasedBookDAOImpl();
+    private static List<BookEntity> getAllBooksFromSources() {
 
-        List<BookEntity> txtBooks = ((TXTBasedBookDAOImpl) txtDAO).getAllBooks();
-        List<BookEntity> csvBooks = ((CSVBasedBookDAOImpl) csvDAO).getAllBooks();
+        TXTBasedBookDAOImpl txtDAO = new TXTBasedBookDAOImpl();
+        CSVBasedBookDAOImpl csvDAO = new CSVBasedBookDAOImpl();
+        XMLBasedBookDAOImpl xmlDAO = new XMLBasedBookDAOImpl();
+        JSONBasedBookDAOImpl jsonDAO = new JSONBasedBookDAOImpl();
 
-        for (BookEntity book : txtBooks) {
-            boolean exist = csvBooks.stream()
-                    .anyMatch(csvBook -> csvBook.getIsbn().equals(book.getIsbn()));
-            if (!exist) {
-                csvBooks.add(book);
+        List<BookEntity> allBooks = new ArrayList<>();
+        allBooks.addAll(txtDAO.getAllBooks());
+        allBooks.addAll(csvDAO.getAllBooks());
+        allBooks.addAll(xmlDAO.getAllBooks());
+        allBooks.addAll(jsonDAO.getAllBooks());
+
+        Set<String> isbnSet = new HashSet<>();
+        List<BookEntity> uniqueBooks = new ArrayList<>();
+        for (BookEntity book : allBooks) {
+            if (isbnSet.add(book.getIsbn())) {
             }
+            uniqueBooks.add(book);
         }
-        ((CSVBasedBookDAOImpl) csvDAO).saveAllBooks(csvBooks);
-        System.out.println("Migrated TXT to CSV successfully.");
-    }
-
-    public void migrateCsvToTxt() {
-        BookDAO csvDAO = new CSVBasedBookDAOImpl();
-        BookDAO txtDAO = new TXTBasedBookDAOImpl();
-        List<BookEntity> csvBooks = ((CSVBasedBookDAOImpl) csvDAO).getAllBooks();
-        List<BookEntity> txtBooks = ((TXTBasedBookDAOImpl) txtDAO).getAllBooks();
-        for (BookEntity book : csvBooks) {
-            boolean exist = txtBooks.stream()
-                    .anyMatch(txtBook -> txtBook.getIsbn().equals(book.getIsbn()));
-            if (!exist) {
-                txtBooks.add(book);
-            }
-        }
-
-        ((TXTBasedBookDAOImpl) txtDAO).saveAllBooks(txtBooks);
-        System.out.println("Migrated CSV to TXT successfully");
+        return uniqueBooks;
     }
 
 }
