@@ -29,6 +29,7 @@ public class RecordMigrationUtils {
         return removeDuplicates(allBooks);
     }
 
+
     public static void migrateAllFilesToTXT() {
         TXTBasedBookDAOImpl txtDAO = new TXTBasedBookDAOImpl();
         List<BookEntity> allBooks = getAllBooksFromSources();
