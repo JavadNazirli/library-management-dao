@@ -71,7 +71,7 @@ public class TXTBasedBookDAOImpl implements BookDAO {
     }
 
     private void writeBooksToFile(List<BookEntity> books) {
-        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(FILE_PATH))) {
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(FILE_PATH,false))) {
             for (BookEntity book : books) {
                 bufferedWriter.write(
                         book.getIsbn() + SEPARATOR

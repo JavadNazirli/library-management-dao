@@ -17,5 +17,33 @@ a9b0c1d2-e3f4-a5b6-c7d8-789abcdef123;The Road;Cormac McCarthy;2006
 3f4a5b6c-7d8e-9f0a-1b2c-123456789def;Sapiens;Yuval Noah Harari;2011
 d8e9f0a1-b2c3-d4e5-f6a7-abcdef987654;Atomic Habits;James Clear;2018
 6c7d8e9f-0a1b-2c3d-4e5f-123456789abc;The Outsiders;S.E. Hinton;1967
-0f1a2b3c-4d5e-6f7a-8b9c-abcdef123456;The Kite Runner;Khaled Hosseini;2003
-
+3a8c6949-4291-4772-b8a9-506e3a09b6a3;The Great Adventure;William Black;2005
+f1899392-b150-4b65-b029-cdbd72b685e3;Mystery of the Forest;Jane Smith;1998
+55966b4c-0e6f-4f5a-9f87-bbe923a828b6;Journey Through Time;Charlotte Green;2012
+3726f9a9-9255-4f47-b1a1-180b54826b4b;Science of the Future;Robert Brown;2020
+ee1b6f45-5708-4e78-8cd5-31a2b496e69b;History Unveiled;Sophia Red;2001
+60db024b-e28d-4878-926f-e38e581e6c71;The Lost City;Michael Blue;1987
+accccd6b-7df2-4a6a-b256-9de8a0bc1934;Shadows of the Past;Olivia Purple;2015
+607d4920-48b5-40e6-98fd-b2a2e83f9d72;Exploration Beyond;William Black;2009
+7e59ae2e-ff9d-46c4-8fc0-49f7100f21d5;The Hidden Truth;John Doe;1996
+828c0acb-0549-479f-b2d0-f9d05735f539;Voyage of the Stars;Emily White;2019
+79a4d8c4-8b35-4a9d-8b57-9c2a1b93d09e;The Great Adventure;Robert Brown;2010
+42b4d462-1746-4bcf-b91b-57b46c5f47a0;Mystery of the Forest;Charlotte Green;2003
+53952b66-c30e-4d71-97f7-c820d9e1a204;Journey Through Time;Michael Blue;2000
+72cd017d-d9cf-4429-957d-c768d7559f1f;Science of the Future;Sophia Red;2023
+535de9d1-7f0b-44c6-8f44-cc5db1e536bc;History Unveiled;Olivia Purple;2018
+9f1f9539-ef0b-4c1f-b46f-467aba047929;The Lost City;William Black;1991
+39f08735-5737-4216-baf4-e1f988cf8496;Shadows of the Past;James Yellow;2004
+c5d4160b-c245-42b1-b9b3-9f06a6245d68;Exploration Beyond;Jane Smith;2012
+be993cc6-bcb7-44c2-883b-388d4187bff4;The Hidden Truth;Charlotte Green;2011
+75045014-e327-47a9-b13f-3f22b8f1685f;Voyage of the Stars;Emily White;2022
+e905ff3f-142d-4690-a6ca-d6f85a7f3878;The Great Adventure;Sophia Red;2024
+cba19c8b-bb79-43c4-b2a2-df0fe29c255d;Mystery of the Forest;James Yellow;2016
+f508cf42-3c66-4021-a0d0-2bde4604e390;Journey Through Time;Olivia Purple;2007
+fd61e577-2b5e-4f72-9a50-4b9f8b09a8a3;Science of the Future;William Black;2010
+ae8a1c29-56ff-4c9d-8466-4ffbf23c218a;History Unveiled;Robert Brown;2021
+22d1326b-7d8b-4c29-93a0-c6c44c4c2858;The Lost City;Olivia Purple;2023
+1a727478-9e0b-477f-a36c-bd7e96085ed9;Shadows of the Past;Michael Blue;2022
+3d3f9938-6c59-492f-b6b7-1e7c57328c67;Exploration Beyond;John Doe;2005
+8ef1d74a-5b1f-4662-b680-04587d3fe0b6;The Hidden Truth;Jane Smith;1999
+6a70085b-b378-4e2d-a993-f3e1a3b287ab;Voyage of the Stars;James Yellow;2013

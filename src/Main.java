@@ -7,13 +7,17 @@ import main.dao.inMemory.InMemoryBookDAOImpl;
 import main.model.BookEntity;
 import main.utils.RecordMigrationUtils;
 
+import java.sql.SQLOutput;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
-        XMLBasedBookDAOImpl bookDAO = new XMLBasedBookDAOImpl();
-       bookDAO.getAllBooks().forEach(System.out::println);
+        TXTBasedBookDAOImpl bookDAO = new TXTBasedBookDAOImpl();
+        RecordMigrationUtils.migrateAllFilesToTXT();
+        bookDAO.getAllBooks().forEach(System.out::println);
 
 
 //        CSVBasedBookDAOImpl bookDAOImpl = new CSVBasedBookDAOImpl();
