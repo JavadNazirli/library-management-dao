@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres_container
+    environment:
+      POSTGRES_USER: javad
+      POSTGRES_PASSWORD: javad321!
+      POSTGRES_DB: library_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  liquibase:
+    image: liquibase/liquibase
+    container_name: liquibase_container
+    volumes:
+      - ./changelog:/liquibase/changelog  # Doğru klasör adını ve yolunu ayarladım
+    working_dir: /liquibase
+    command: [
+      "liquibase",
+      "--changeLogFile=changelog/changelog.xml",
+      "--url=jdbc:postgresql://postgres:5432/library_db",
+      "--username=javad",
+      "--password=javad321!",
+      "update"
+    ]
+    depends_on:
+      - postgres
+
+  library-management-dao:
+    image: library-management-dao-app
+    container_name: library-management-dao
+    build: .
+    depends_on:
+      - postgres
+      - liquibase
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/library_db
+      SPRING_DATASOURCE_USERNAME: javad
+      SPRING_DATASOURCE_PASSWORD: javad321!
+    volumes:
+      - ./lib:/library-management-dao/lib
+    command: ["java", "-cp", "/lib/*:library-management-dao.jar", "Main"] # Doğru main class ismini ekledim
+
+volumes:
+  postgres_data:

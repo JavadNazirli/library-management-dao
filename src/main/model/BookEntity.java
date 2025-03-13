@@ -3,12 +3,10 @@ package main.model;
 public class BookEntity {
     private String isbn;
     private String name;
-
-    public BookEntity() {
-    }
-
     private String author;
     private int publicationYear;
+    public BookEntity() {
+    }
 
     public BookEntity(String name, String author, int publicationYear) {
         this(null, name, author, publicationYear);
