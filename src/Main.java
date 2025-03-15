@@ -4,11 +4,9 @@ import main.model.BookEntity;
 
 public class Main {
     public static void main(String[] args) {
-        BookDAO dao = new PostgresSqlBasedDaoImpl();
+        PostgresSqlBasedDaoImpl postgresSqlBasedDao = new PostgresSqlBasedDaoImpl();
+        postgresSqlBasedDao.getAllBooks().forEach(System.out::println);
 
-        // Kitap ekle
-        BookEntity book = new BookEntity("Test Kitap", "Usta Yazar", 2023);
-        dao.addBook(book);
 
     }
 }

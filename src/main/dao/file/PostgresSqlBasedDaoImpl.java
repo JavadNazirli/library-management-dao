@@ -4,6 +4,8 @@ import main.dao.BookDAO;
 import main.model.BookEntity;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -19,7 +21,7 @@ public class PostgresSqlBasedDaoImpl implements BookDAO {
     @Override
     public void addBook(BookEntity book) {
         String sql = "INSERT INTO books (isbn, name, author, publication_year) VALUES (?, ?, ?, ?)";
-        String generatedIsbn = UUID.randomUUID().toString(); // ISBN’i UUID ile üretiyoruz
+        String generatedIsbn = UUID.randomUUID().toString();
         try (Connection conn = getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setString(1, generatedIsbn);
@@ -89,6 +91,26 @@ public class PostgresSqlBasedDaoImpl implements BookDAO {
             }
         } catch (SQLException e) {
             throw new IllegalStateException("Failed to delete book from Postgres: " + e.getMessage(), e);
+        }
+    }
+    public List<BookEntity> getAllBooks() {
+        List<BookEntity> books = new ArrayList<>();
+        String sql = "SELECT * FROM books";
+        try (Connection conn = getConnection();
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+                BookEntity book = new BookEntity(
+                        rs.getString("isbn"),
+                        rs.getString("name"),
+                        rs.getString("author"),
+                        rs.getInt("publication_year")
+                );
+                books.add(book);
+            }
+            return books;
+        } catch (SQLException e) {
+            throw new IllegalStateException("Failed to get all books from Postgres: " + e.getMessage(), e);
         }
     }
 }
