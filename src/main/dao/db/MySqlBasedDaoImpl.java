@@ -1,4 +1,4 @@
-package main.dao.file;
+package main.dao.db;
 
 import main.dao.BookDAO;
 import main.model.BookEntity;
@@ -9,8 +9,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-public class PostgresSqlBasedDaoImpl implements BookDAO {
-    private static final String URL = "jdbc:postgresql://localhost:5432/library_db";
+public class MySqlBasedDaoImpl implements BookDAO {
+    private static final String URL = "jdbc:mysql://mysql:3306/library_db";
     private static final String USER = "javad";
     private static final String PASSWORD = "javad321!";
 
@@ -29,9 +29,9 @@ public class PostgresSqlBasedDaoImpl implements BookDAO {
             stmt.setString(3, book.getAuthor());
             stmt.setInt(4, book.getPublicationYear());
             stmt.executeUpdate();
-            System.out.println("Book added to Postgres with ISBN: " + generatedIsbn);
+            System.out.println("Book added to MySQL with ISBN: " + generatedIsbn);
         } catch (SQLException e) {
-            throw new IllegalStateException("Failed to add book to Postgres: " + e.getMessage(), e);
+            throw new IllegalStateException("Failed to add book to MySQL: " + e.getMessage(), e);
         }
     }
 
@@ -53,7 +53,7 @@ public class PostgresSqlBasedDaoImpl implements BookDAO {
             }
             return Optional.empty();
         } catch (SQLException e) {
-            throw new IllegalStateException("Failed to get book from Postgres: " + e.getMessage(), e);
+            throw new IllegalStateException("Failed to get book from MySQL: " + e.getMessage(), e);
         }
     }
 
@@ -68,12 +68,12 @@ public class PostgresSqlBasedDaoImpl implements BookDAO {
             stmt.setString(4, book.getIsbn());
             int rowsAffected = stmt.executeUpdate();
             if (rowsAffected > 0) {
-                System.out.println("Book updated in Postgres: " + book.getName());
+                System.out.println("Book updated in MySQL: " + book.getName());
             } else {
                 throw new IllegalArgumentException("No book found with ISBN: " + book.getIsbn());
             }
         } catch (SQLException e) {
-            throw new IllegalStateException("Failed to update book in Postgres: " + e.getMessage(), e);
+            throw new IllegalStateException("Failed to update book in MySQL: " + e.getMessage(), e);
         }
     }
 
@@ -85,14 +85,15 @@ public class PostgresSqlBasedDaoImpl implements BookDAO {
             stmt.setString(1, isbn);
             int rowsAffected = stmt.executeUpdate();
             if (rowsAffected > 0) {
-                System.out.println("Book deleted from Postgres with ISBN: " + isbn);
+                System.out.println("Book deleted from MySQL with ISBN: " + isbn);
             } else {
                 throw new IllegalArgumentException("No book found with ISBN: " + isbn);
             }
         } catch (SQLException e) {
-            throw new IllegalStateException("Failed to delete book from Postgres: " + e.getMessage(), e);
+            throw new IllegalStateException("Failed to delete book from MySQL: " + e.getMessage(), e);
         }
     }
+
     public List<BookEntity> getAllBooks() {
         List<BookEntity> books = new ArrayList<>();
         String sql = "SELECT * FROM books";
@@ -110,7 +111,7 @@ public class PostgresSqlBasedDaoImpl implements BookDAO {
             }
             return books;
         } catch (SQLException e) {
-            throw new IllegalStateException("Failed to get all books from Postgres: " + e.getMessage(), e);
+            throw new IllegalStateException("Failed to get all books from MySQL: " + e.getMessage(), e);
         }
     }
 }
